@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="Main" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="To Do List by CodeNameOne" >
+  <component type="Tabs" name="Tabs1" cloudDestinationProperty="Tabs1" >
+    <layoutConstraint value="Center" />
+    <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+      <str>List</str>
+      <str>Add</str>
+      <str>About</str>
+    </custom>
+    <component type="Container" name="Container3" tabTitle="List" cloudDestinationProperty="Container3" scrollVisible="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="MultiList" name="ToDoList" cloudDestinationProperty="ToDoList" >
+        <layoutConstraint value="West" />
+      </component>
+    </component>
+    <component type="Container" name="Container1" tabTitle="Add" cloudDestinationProperty="Container1" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="ComponentGroup" name="ComponentGroup" cloudDestinationProperty="ComponentGroup" >
+        <component type="Label" name="Label" cloudDestinationProperty="Label" text="Add new TO DO Item:" >
+        </component>
+        <component type="TextField" name="ToDoItem" cloudBoundProperty="text" cloudDestinationProperty="TextField1" text="" >
+        </component>
+        <component type="Label" name="Label1" cloudDestinationProperty="Label1" text="Add Description:" >
+        </component>
+        <component type="TextField" name="Description" cloudBoundProperty="text" cloudDestinationProperty="Description" text="" >
+        </component>
+        <component type="Button" name="AddButton" cloudDestinationProperty="Button" text="Add To Do Item" >
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="Container" tabTitle="About" cloudDestinationProperty="Container" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="TextArea" name="TextArea" cloudBoundProperty="text" cloudDestinationProperty="TextArea" uiid="Label" text="This template shows you how to create a tab based application" editable="false" >
+        <layoutConstraint value="Center" />
+      </component>
+    </component>
+  </component>
+</component>
