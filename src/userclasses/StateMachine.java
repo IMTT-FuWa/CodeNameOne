@@ -40,6 +40,11 @@ public class StateMachine extends StateMachineBase {
         findToDoList().getModel().addItem(h);
         findToDoItem().setText("");
         findDescription().setText("");
+    }
 
+    @Override
+    protected void onMain_ToDoListAction(Component c, ActionEvent event) {
+
+    
     }
 }
